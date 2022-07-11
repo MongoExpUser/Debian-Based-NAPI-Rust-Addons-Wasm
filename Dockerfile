@@ -6,7 +6,7 @@
 #  *                                                                                                                                    *
 #  * Copyright © 2015 - present. MongoExpUser.  All Rights Reserved.                                                                    *
 #  *                                                                                                                                    *
-#  * License: MIT - https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/LICENSE.                                    *
+#  * License: MIT - https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/LICENSE                                     *
 #  *                                                                                                                                    *
 #  * @License Ends                                                                                                                      *
 #  **************************************************************************************************************************************
