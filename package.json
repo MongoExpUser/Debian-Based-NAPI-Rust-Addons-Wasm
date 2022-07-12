@@ -1,5 +1,5 @@
 {
-  "name": "domain",
+  "name": "napi-rust-project",
   "version": "2022.0.0",
   "description": "Rust Container Project for NAPI-Rust",
   "main": "./index.js",
@@ -13,7 +13,7 @@
   },
   "homepage": "https://domain.com",
   "napi": {
-    "name": "api",
+    "name": "callRust",
     "triples": {
       "defaults": true,
       "addition": [
@@ -32,8 +32,7 @@
     "build:debug": "cargo build && napi build"
   },
   "dependencies": {
-    "@napi-rs/cli": "*",
-    "wasm-run": "*"
+    "@napi-rs/cli": "*"
   },
   "keywords": [
     "napi",
