@@ -4,8 +4,8 @@
   "description": "Rust Container Project for NAPI-Rust",
   "main": "./index.js",
   "license": "MIT",
-  "url": "https://domain.com",
-  "email": "mongoexpuser@domain.com",
+  "url": "https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/README.md",
+  "email": "MongoExpUser@users.noreply.github.com",
   "author": "Copyright © 2015 - present. MongoExpUser.  All Rights Reserved.",
   "repository": {
     "type": "aws, linode and g-drive",
