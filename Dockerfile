@@ -11,7 +11,7 @@
 #  * @License Ends                                                                                                                      *
 #  **************************************************************************************************************************************
 # *                                                                                                                                     *
-# *  Project: Rust Container Project for NA                                                                                             *
+# *  Project: Rust Container Project for NAPI-Ru                                                                                        *
 # *                                                                                                                                     *
 # *  This dockerfile creates an image based on:                                                                                         *
 # *                                                                                                                                     *                                                                                                              *
