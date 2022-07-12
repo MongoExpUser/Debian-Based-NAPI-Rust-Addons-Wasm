@@ -17,7 +17,7 @@
 # *                                                                                                                                     *                                                                                                              *
 # *   1)  Rust:1.62.0 (Debian based)                                                                                                    *
 # *                                                                                                                                     *
-# *   2)  Additional debain Packages                                                                                                    *
+# *   2)  Additional debian Packages                                                                                                    *
 # *                                                                                                                                     *
 # *   3)  Python v3.9                                                                                                                   *
 # *                                                                                                                                     *
