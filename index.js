@@ -41,5 +41,6 @@ class OilApiGravity
 {
   const oag = new  OilApiGravity();
   oag.oilApiGravity(1.02);
+  // value should be 8
  
 })();
