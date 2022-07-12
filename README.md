@@ -20,9 +20,10 @@ Rust-NAPI is based on Rust toolchain and does not use node-gyp.
     The Repo contains the following files: <br>
     (1)  Cargo.toml <br>
     (2)  package.json <br>
-    (3)  ./src/build.rs <br>
-    (4)  ./src/lib.rs <br>
-    (5)  index.js <br>
+    (3)  index.js <br>
+    (4)  ./src/build.rs <br>
+    (5)  ./src/lib.rs <br>
+
     <strong> Modify </strong> the  above files as needed, or can keep the original contents to test.
     
 2) #### BUILD docker image: 
