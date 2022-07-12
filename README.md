@@ -59,3 +59,5 @@ NAPI-Rust is based on Rust toolchain and does not use node-gyp.
 # License
 
 Copyright © 2015 - present. MongoExpUser
+
+Licensed under the MIT license.
