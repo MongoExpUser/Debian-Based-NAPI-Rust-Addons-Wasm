@@ -1,5 +1,5 @@
 [package]
-name = "demo"
+name = "napi-rust-demo"
 version = "0.1.0"
 edition = "2021"
 authors = ["MongoExpUser <MongoExpUser@users.noreply.github.com>"]
