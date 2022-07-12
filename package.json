@@ -13,7 +13,7 @@
   },
   "homepage": "https://domain.com",
   "napi": {
-    "name": "finoSum",
+    "name": "api",
     "triples": {
       "defaults": true,
       "addition": [
