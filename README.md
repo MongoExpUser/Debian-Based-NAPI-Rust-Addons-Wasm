@@ -6,7 +6,7 @@ Create a Debian-Based NAPI-Rust Image for Writing and Testing NAPI-Rust Addon Mo
 </strong>
 <br><br>
 
-NAPI-Rust is similar but different from  C/C++ Node-NAPI (https://nodejs.org/api/n-api.html) 
+NAPI-Rust is similar but different from  NAPI C/C++ (https://nodejs.org/api/n-api.html) 
 
 NAPI-Rust is based on Rust toolchain and does not use node-gyp. 
 
