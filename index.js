@@ -15,14 +15,14 @@
 # *                                                                                                                                     *
 # *  This index.js file creates a simple class to test:                                                                                 *
 # *                                                                                                                                     *                                                                                                              *
-# *   1)  Invocation of a NAPI-Rust Addon module from within Node.js                                                                    *
+# *   1)  Invocation of a NAPI-Rust Addon modules from within Node.js                                                                    *
 # *                                                                                                                                     *
 # *                                                                                                                                     *
 # ***************************************************************************************************************************************/
 
 
 
-class OilApiGravity
+class CallRust
 {
     constructor()
     {
@@ -31,16 +31,25 @@ class OilApiGravity
     
     oilApiGravity(specificGravity)
     {
-      const { api } = require("./api.node");
+      const { api } = require("./callRust.node");
       return api(specificGravity);
+    }
+    
+    gammaDistributionFunction(a, x)
+    {
+      const { gdf } = require("./callRust.node");
+      return gdf(a, x);
     }
 }
 
 
 (async function test()
 {
-  const oag = new  OilApiGravity();
-  oag.oilApiGravity(1.02);
+  const cr = new  CallRust();
+  cr.oilApiGravity(1.02);
   // value should be 8
- 
+  
+  cr.gammaDistributionFunction(0.01, 0.02);
+  // value should be 4.069063539262561
+  
 })();
