@@ -14,7 +14,7 @@ fn api(specific_gravity: f64) -> u8
 #[napi]
 fn gamma_function(a: f64) -> f64
 {
-  // a function for calculating gamma function
+  // A function for calculating gamma function
   // Reference: Nemes, G. (2008). New asymptotic expansion for the Γ(x) function (an update).
   // In Stan's Library, Ed.S.Sykora, Vol.II. First released December 28, 2008.
   // Link: http://www.ebyte.it/library/docs/math08/GammaApproximationUpdate.html.
@@ -28,7 +28,7 @@ fn gamma_function(a: f64) -> f64
 #[napi]
 fn  gdf(a: f64, x: f64) -> f64
 {
-  // a function for calculating gamma distribution function
+  // A function for calculating gamma distribution function
   // Reference: NIST/SEMATECH e-Handbook of statistical methods.
   // http://www.itl.nist.gov/div898/handbook/eda/section3/eda366b.htm. Retrieved January 5, 2016.
   // Application: Unconventional natural gas production decline analysis
