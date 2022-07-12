@@ -1,6 +1,8 @@
 // lib.rs
 
 use napi_derive::napi;
+use std::f64::consts::PI;
+use core::f64::consts::E;
 
 #[napi]
 fn api(specific_gravity: f64) -> u8
