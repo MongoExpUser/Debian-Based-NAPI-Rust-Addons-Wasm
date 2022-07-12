@@ -34,5 +34,5 @@ fn  gdf(a: f64, x: f64) -> f64
   // Application: Unconventional natural gas production decline analysis
   let gdf_value =  a.powf(x - 1.0) * (-a).exp() / gamma_function(x);
   println!("Gamma Distribution Function value is: {gdf_value}");
-  return  1.2; //gdf_value;
+  return  gdf_value;
 }
