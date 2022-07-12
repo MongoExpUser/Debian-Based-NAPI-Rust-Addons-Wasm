@@ -1,0 +1,43 @@
+{
+  "name": "domain",
+  "version": "2022.0.0",
+  "description": "Rust Container Project for NAPI-Rust",
+  "main": "./index.js",
+  "license": "MIT",
+  "url": "https://domain.com",
+  "email": "mongoexpuser@domain.com",
+  "author": "Copyright © 2015 - present. MongoExpUser.  All Rights Reserved.",
+  "repository": {
+    "type": "aws, linode and g-drive",
+    "url": "https://domain.com"
+  },
+  "homepage": "https://domain.com",
+  "napi": {
+    "name": "finoSum",
+    "triples": {
+      "defaults": true,
+      "addition": [
+        "x86_64-unknown-linux-musl",
+        "x86_64-unknown-freebsd",
+        "aarch64-unknown-linux-gnu",
+        "x86_64-unknown-illumos",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl"
+      ]
+    }
+  },
+  "scripts": {
+    "install": "npm run build",
+    "build": "cargo build --release && napi build --release",
+    "build:debug": "cargo build && napi build"
+  },
+  "dependencies": {
+    "@napi-rs/cli": "*",
+    "wasm-run": "*"
+  },
+  "keywords": [
+    "napi",
+    "rust",
+    "napi-rust"
+  ]
+}
