@@ -15,7 +15,7 @@
 # *                                                                                                                                     *
 # *  This index.js file creates a simple class to test:                                                                                 *
 # *                                                                                                                                     *                                                                                                              *
-# *   1)  Invocation of NAPI-Rust Addon modules from within Node.js                                                                     *
+# *   1)  Invocation of a NAPI-Rust Addon module from within Node.js                                                                    *
 # *                                                                                                                                     *
 # *                                                                                                                                     *
 # ***************************************************************************************************************************************/
