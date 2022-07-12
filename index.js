@@ -1,5 +1,5 @@
 /****************************************************************************************************************************************
-# * index.js                                                                                                                          *
+# * index.js                                                                                                                            *
 #  **************************************************************************************************************************************
 #  *                                                                                                                                    *
 #  * @License Starts                                                                                                                    *
@@ -15,7 +15,7 @@
 # *                                                                                                                                     *
 # *  This index.js file creates a simple class to test:                                                                                 *
 # *                                                                                                                                     *                                                                                                              *
-# *   1)  Invocation of a NAPI-Rust Addon modules from within Node.js                                                                    *
+# *   1)  Invocation of a NAPI-Rust Addon modules from within Node.js                                                                   *
 # *                                                                                                                                     *
 # *                                                                                                                                     *
 # ***************************************************************************************************************************************/
@@ -46,7 +46,7 @@ class CallRust
 (async function test()
 {
   const cr = new  CallRust();
-  cr.oilApiGravity(1.02);
+  cr.oilApiGravity(1.01);
   // value should be 8
   
   cr.gammaDistributionFunction(0.01, 0.02);
