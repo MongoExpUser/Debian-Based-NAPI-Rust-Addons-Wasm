@@ -2,7 +2,7 @@
 name = "demo"
 version = "0.1.0"
 edition = "2021"
-authors = ["MongoExpUser <mongoexpuser@domain.com>"]
+authors = ["MongoExpUser <MongoExpUser@users.noreply.github.com>"]
 description = "Rust Container Project for NAPI-Rust"
 documentation = "https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/README.md"
 rust-version = "1.62.0"
