@@ -19,7 +19,7 @@ fn gamma_function(a: f64) -> f64
   // In Stan's Library, Ed.S.Sykora, Vol.II. First released December 28, 2008.
   // Link: http://www.ebyte.it/library/docs/math08/GammaApproximationUpdate.html.
   // See Nemes' formula & Fig.1 on page 6 of full text: Nemes_6.
-   // Application: Unconventional natural gas production decline analysis
+  // Application: Unconventional natural gas production decline analysis
   let  coefficient6 = ( 1.0 + 1.0/(12.0 * a * a) + 1.0/(1440.0 * a.powf(4.0)) + 239.0/(362880.0 * a.powf(6.0)) ).powf(a);   //Nemes_6 coefficient
   return (a/E).powf(a) * (2.0 * PI / a).sqrt() * coefficient6;
 }
