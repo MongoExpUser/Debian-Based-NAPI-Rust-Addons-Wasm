@@ -28,25 +28,25 @@ NAPI-Rust is based on Rust toolchain and does not use node-gyp.
     <strong> Modify </strong> the  above files as needed, or can keep the original contents to test.
     
 2) #### BUILD docker image: 
-   sudo docker build -t  mongoexpuser/rust-napi-app:latest .
+   sudo docker build -t  mongoexpuser/napi-rust-app:latest .
    
 3) #### RUN docker container and map local CWD to docker working directory: "/home/myapp" : 
-   sudo docker run -itd --name running-rust-napi-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged mongoexpuser/rust-napi-app:latest
+   sudo docker run -itd --name running-napi-rust-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged mongoexpuser/napi-rust-app:latest
 
 4) #### Interacting with container: start/restart, stop, shell into, and exit container instance: 
-   sudo docker start running-rust-napi-app <br>
-   sudo docker stop running-rust-napi-app <br>
-   sudo docker exec -it running-rust-napi-app bash <br>
+   sudo docker start running-napi-rust-app <br>
+   sudo docker stop running-napi-rust-app <br>
+   sudo docker exec -it running-napi-rust-app bash <br>
    exit
    
 5) #### Running command inside the Docker instance, to compile, re-compile, run node.js app and clean code artifacts:
-   sudo docker exec -it running-rust-napi-app npm run build <br>
-   sudo docker exec -it running-rust-napi-app npm rebuild <br>
-   sudo docker exec -it running-rust-napi-app node index.js <br>
-   sudo docker exec -it running-rust-napi-app cargo clean <br>
+   sudo docker exec -it running-napi-rust-app npm run build <br>
+   sudo docker exec -it running-napi-rust-app npm rebuild <br>
+   sudo docker exec -it running-napi-rust-app node index.js <br>
+   sudo docker exec -it running-napi-rust-app cargo clean <br>
 
 6) ####  Test Node.js code inside the container in the CWD:
-   sudo docker exec -it running-rust-napi-app node index.js
+   sudo docker exec -it running-napi-rust-app node index.js
 
 
 # References
