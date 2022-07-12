@@ -2,7 +2,7 @@
 
 <br>
 <strong>
-Create a Debian-Based NAPI-Rust Image for Writing of and Testing Rust Addon Modules for Node.js Applications.
+Create a Debian-Based NAPI-Rust Image for Writing and Testing NAPI-Rust Addon Modules for Node.js Applications.
 </strong>
 <br><br>
 
