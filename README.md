@@ -18,7 +18,7 @@ NAPI-Rust is based on Rust toolchain and does not use node-gyp.
 1) #### Clone repo
     Clone the repo. 
     The Repo contains the following files: <br>
-    (1)  Dockerfile
+    (1)  Dockerfile <br>
     (2)  Cargo.toml <br>
     (3)  package.json <br>
     (4)  index.js <br>
