@@ -32,7 +32,7 @@ NAPI-Rust is based on Rust toolchain and does not use node-gyp.
    sudo docker build -t  mongoexpuser/napi-rust-app:latest .
    
 3) #### RUN docker container and map local CWD to docker working directory: "/home/myapp" : 
-   sudo docker run -itd --name running-napi-rust-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged mongoexpuser/napi-rust-app:latest
+   sudo docker run -itd --name running-napi-rust-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged --restart unless-stopped mongoexpuser/napi-rust-app:latest
 
 4) #### Interacting with container: start/restart, stop, shell into, and exit container instance: 
    sudo docker start running-napi-rust-app <br>
