@@ -47,7 +47,7 @@ NAPI-Rust is based on Rust toolchain and does not use node-gyp.
    sudo docker exec -it running-napi-rust-app cargo clean <br>
 
 6) ####  Test Node.js code inside the container in the CWD:
-   sudo docker exec -it running-napi-rust-app node index.js
+   sudo docker exec -it running-napi-rust-app node index.js 
 
 
 # References
