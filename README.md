@@ -23,6 +23,7 @@ Rust-NAPI is based on Rust toolchain and does not use node-gyp.
     (3)  index.js <br>
     (4)  ./src/build.rs <br>
     (5)  ./src/lib.rs <br>
+    (6)  ./src/main.rs <br>
 
     <strong> Modify </strong> the  above files as needed, or can keep the original contents to test.
     
