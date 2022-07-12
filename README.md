@@ -36,19 +36,19 @@ See NAPI C/C++ example: https://github.com/MongoExpUser/Shale-Reservoir-DNN-and-
 3) #### RUN docker container and map local CWD to docker working directory: "/home/myapp" : 
    sudo docker run -itd --name running-napi-rust-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged --restart unless-stopped mongoexpuser/napi-rust-app:latest
 
-4) #### Interacting with container: start/restart, stop, shell into, and exit container instance: 
+4) #### INTERACT with container: start/restart, stop, shell into, and exit container instance: 
    sudo docker start running-napi-rust-app <br>
    sudo docker stop running-napi-rust-app <br>
    sudo docker exec -it running-napi-rust-app bash <br>
    exit
    
-5) #### Running command inside the Docker instance, to compile, re-compile, run node.js app and clean code artifacts:
+5) #### RUN commands inside the Docker instance, to compile, re-compile, run node.js app and clean code artifacts:
    sudo docker exec -it running-napi-rust-app npm run build <br>
    sudo docker exec -it running-napi-rust-app npm rebuild <br>
    sudo docker exec -it running-napi-rust-app node index.js <br>
    sudo docker exec -it running-napi-rust-app cargo clean <br>
 
-6) ####  Test Node.js code inside the container in the CWD:
+6) ####  TEST Node.js code inside the container in the CWD:
    sudo docker exec -it running-napi-rust-app node index.js 
 
 
