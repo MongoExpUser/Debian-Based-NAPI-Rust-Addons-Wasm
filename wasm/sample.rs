@@ -14,7 +14,7 @@
 #[no_mangle]
 pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
 {
-  // a function for calculating internal rate of return (IRR) of variable-length input array
+  // a function for calculating internal rate of return (IRR) of a variable-length input array
   let increment: f64  = 1E-4;
   let mut guess: f64 = 1E-1;
   let mut npv_out: f64 = 0.0;
