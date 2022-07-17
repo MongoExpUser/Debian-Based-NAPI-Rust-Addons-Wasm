@@ -29,36 +29,31 @@ pub extern "C" fn sub(a: u32, b: u32) -> u32
 
 
 #[no_mangle]
-pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
+pub extern "C" fn irr(cash_flow_array: &mut [f64]) -> f64
 {
   // a function for calculating internal rate of return (IRR) using a variable-length input array
   let increment: f64  = 1E-4;
   let mut guess: f64 = 1E-1;
   let mut npv_out: f64 = 0.0;
   
-  if calculate_npv == true
+  loop
   {
-      loop
-      {
-          guess += increment;
-          let mut npv: f64 = 0.0;
+      guess += increment;
+      let mut npv: f64 = 0.0;
       
-          for item in  &mut *cash_flow_array
-          {
+      for item in  &mut *cash_flow_array
+       {
             npv += *item / (1.0 + guess).powf(*item);
             npv_out = npv;
-          }
+       }
           
-          let condition = npv_out > 0.0;
+       let condition = npv_out > 0.0;
           
-          if !condition
-          {
-              break;
-          }
-      }
+       if !condition
+       {
+         break;
+       }
+  }
   
-      return guess * 100.0;
-   }
-     
-   return 0.0 * 100.0;
+  return guess * 100.0;
 }
