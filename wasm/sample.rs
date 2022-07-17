@@ -10,6 +10,8 @@
          Note: The file is then compiled to: sample.wasm or any other name specified in the above command
 */
 
+
+
 #[no_mangle]
 pub extern "C" fn add(a: u32, b: u32) -> u32
 {
