@@ -10,11 +10,25 @@
          Note: The file is then compiled to: sample.wasm or any other name specified in the above command
 */
 
+#[no_mangle]
+pub extern "C" fn add(a: u32, b: u32) -> u32
+{
+  return a + b;
+}
+
+
+#[no_mangle]
+pub extern "C" fn sub(a: u32, b: u32) -> u32
+{
+  println!("The value of a is: {a}");
+  return a - b;
+}
+
 
 #[no_mangle]
 pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
 {
-  // a function for calculating internal rate of return (IRR) of a variable-length input array
+  // a function for calculating internal rate of return (IRR) using a variable-length input array
   let increment: f64  = 1E-4;
   let mut guess: f64 = 1E-1;
   let mut npv_out: f64 = 0.0;
@@ -41,4 +55,3 @@ pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
       }
     }
   }
-  
