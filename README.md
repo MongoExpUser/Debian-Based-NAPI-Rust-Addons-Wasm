@@ -36,13 +36,13 @@ See NAPI C/C++ example: https://github.com/MongoExpUser/Shale-Reservoir-DNN-and-
 3) #### RUN docker container and map local CWD to docker working directory: "/home/myapp" : 
    sudo docker run -itd --name running-napi-rust-app -v "$PWD":/home/myapp --workdir=/home/myapp --privileged --restart unless-stopped mongoexpuser/napi-rust-app:latest
 
-4) #### INTERACT with container: start/restart, stop, shell into, and exit container instance: 
+4) #### INTERACT with container: start/restart, stop, shell into, and exit container instance, respectively: 
    sudo docker start running-napi-rust-app <br>
    sudo docker stop running-napi-rust-app <br>
    sudo docker exec -it running-napi-rust-app bash <br>
    exit
    
-5) #### RUN commands inside the Docker instance, to compile, re-compile, run node.js app and clean code artifacts:
+5) #### RUN commands inside the Docker instance, to compile, re-compile, run node.js app and clean code artifacts, respectively:
    sudo docker exec -it running-napi-rust-app npm run build <br>
    sudo docker exec -it running-napi-rust-app npm rebuild <br>
    sudo docker exec -it running-napi-rust-app node index.js <br>
@@ -57,7 +57,7 @@ See NAPI C/C++ example: https://github.com/MongoExpUser/Shale-Reservoir-DNN-and-
 
 ### Wasm:
 
-1) In addition, the repo contains miscellaneous sample Rust codes and steps how to compile the codes to <strong>WASM (Web Assembly) </strong> file. <br>
+1) In addition, the repo contains miscellaneous sample Rust codes and steps on how to compile the codes to <strong>WASM (Web Assembly) </strong> file. <br>
    See the link below. <br>
    https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/wasm/sample.rs
 
