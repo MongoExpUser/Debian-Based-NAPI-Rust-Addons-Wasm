@@ -50,7 +50,21 @@ See NAPI C/C++ example: https://github.com/MongoExpUser/Shale-Reservoir-DNN-and-
 
 6) ####  TEST Node.js code inside the container in the CWD:
    sudo docker exec -it running-napi-rust-app node index.js 
+   
+   
 
+## MISCELLANEOUS
+
+### Wasm:
+
+1) In addition, the repo contains miscellaneous sample Rust codes and steps how to compile the codes to <strong>WASM (Web Assembly) </strong> file. <br>
+   See the link below. <br>
+   https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/wasm/sample.rs
+
+2) The repo also contains HTML file that uses the compiled <strong>WASM</strong> file on the Front-End (Browser). <br>
+   See the link below. <br>
+   https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/wasm/index.html
+    
 
 # References
 1 - https://github.com/napi-rs/napi-rs <br>
