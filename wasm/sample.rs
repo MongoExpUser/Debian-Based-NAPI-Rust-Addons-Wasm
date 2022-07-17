@@ -3,9 +3,9 @@
      (1) Install rust with the following command: 
          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh                                (Linux)
          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- --no-modify-path         (MacOS)
-     (2) Install  wasm32-unknown-unknown the following commands: 
+     (2) Install  wasm32-unknown-unknown with the following command: 
          rustup target add wasm32-unknown-unknown                                                      (Linux and MacOS)
-     (3) Then compile file (assuming CWD), using optimization options, with the following command:
+     (3) Then compile the file (assuming CWD), using optimization options, with the following command:
          rustc -A dead_code --target wasm32-unknown-unknown --crate-type=cdylib sample.rs -o sample.wasm -C opt-level=s -C lto=yes 
          Note: The file is then compiled to: sample.wasm or any other name specified in the above command
 */
