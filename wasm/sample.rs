@@ -52,8 +52,10 @@ pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
       
       if !condition
       {
+          return guess * 100.0;
           break;
       }
     }
      
+     return 0.0 * 100.0;
   }
