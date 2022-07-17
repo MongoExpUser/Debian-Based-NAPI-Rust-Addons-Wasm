@@ -8,6 +8,8 @@
      (3) Then compile the file (assuming CWD), using optimization options, with the following command:
          rustc -A dead_code --target wasm32-unknown-unknown --crate-type=cdylib sample.rs -o sample.wasm -C opt-level=s -C lto=yes 
          Note: The file is compiled to "sample.wasm" or any other name specified in the above command.
+     (4) An example on how to use the compiled WASM code (sample.wasm) on the front-end, can ebe found the link with in the repo:
+         https://github.com/MongoExpUser/Debian-Based-NAPI-Rust-Addons/blob/main/wasm/index.html    
 */
 
 
