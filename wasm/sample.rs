@@ -22,7 +22,6 @@ pub extern "C" fn add(a: u32, b: u32) -> u32
 #[no_mangle]
 pub extern "C" fn sub(a: u32, b: u32) -> u32
 {
-  println!("The value of a is: {a}");
   return a - b;
 }
 
