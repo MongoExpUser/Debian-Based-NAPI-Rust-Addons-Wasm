@@ -1,4 +1,4 @@
-# Debian-Based-NAPI-Rust-Addons
+# Debian-Based-NAPI-Rust-Addons-Wasm
 
 <br>
 <strong>
