@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>WASM Demo</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body align="center">
+      <h1>WASM Demo on Front-End</h1>
+      
+      <div id="div-display" style="text-align:center"></div>
+      
+      <script>
+        // this is a test of wasm-rust compile module with JavaScrip IIFE
+        (async function callWasm ()
+        {
+          let response = await fetch('sample.wasm');
+          let bytes = await response.arrayBuffer();
+          let { instance } = await WebAssembly.instantiate(bytes, { });
+          
+          // call functions
+          let add = instance.exports.add(13, 12);
+          let sub = instance.exports.sub(13, 12);
+          let irr = instance.exports.irr([1.01, 2.07, 1.0, 3.0, 2.0], false);
+          
+          // display functions' return value in the console
+          console.log("The answer for add is: ", add);
+          console.log("The answer for sub is: ", sub);
+          console.log("The answer for irr is: ", irr);
+          
+          // display functions' return value on the wep page
+          const answers = `
+            The answer for add is: ${add} <br>
+            The answer for sub is: ${sub} <br>
+            The answer for irr is: ${irr} <br>
+          `
+          document.getElementById("div-display").innerHTML = answers;
+          
+        })();
+      </script>
+  </body>
+</html>
