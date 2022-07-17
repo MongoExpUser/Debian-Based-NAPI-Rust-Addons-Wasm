@@ -36,26 +36,27 @@ pub extern "C" fn irr(cash_flow_array: &mut [f64], calculate_npv: bool) -> f64
   
   if calculate_npv == true
   {
-
-    loop
-    {
-      guess += increment;
-      let mut npv: f64 = 0.0;
+      loop
+      {
+          guess += increment;
+          let mut npv: f64 = 0.0;
+      
+          for item in  &mut *cash_flow_array
+          {
+            npv += *item / (1.0 + guess).powf(*item);
+            npv_out = npv;
+          }
+          
+          let condition = npv_out > 0.0;
+          
+          if !condition
+          {
+              break;
+          }
+      }
   
-      for item in  &mut *cash_flow_array
-      {
-        npv += *item / (1.0 + guess).powf(*item);
-        npv_out = npv;
-      }
-      
-      let condition = npv_out > 0.0;
-      
-      if !condition
-      {
-          return guess * 100.0;
-          break;
-      }
-    }
+      return guess * 100.0;
+   }
      
      return 0.0 * 100.0;
   }
