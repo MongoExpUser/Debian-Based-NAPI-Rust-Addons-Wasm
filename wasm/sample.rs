@@ -1,4 +1,4 @@
-/* - This file can be compiled to wasm (https://webassembly.org/) and used on the frond-end
+/* - This file can be compiled to wasm (https://webassembly.org/) and used in the front-end (browser).
    - To compile the file:
      (1) Install rust with the following command: 
          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh                                (Linux)
@@ -7,7 +7,7 @@
          rustup target add wasm32-unknown-unknown                                                      (Linux and MacOS)
      (3) Then compile the file (assuming CWD), using optimization options, with the following command:
          rustc -A dead_code --target wasm32-unknown-unknown --crate-type=cdylib sample.rs -o sample.wasm -C opt-level=s -C lto=yes 
-         Note: The file is then compiled to: sample.wasm or any other name specified in the above command
+         Note: The file is compiled to "sample.wasm" or any other name specified in the above command.
 */
 
 
