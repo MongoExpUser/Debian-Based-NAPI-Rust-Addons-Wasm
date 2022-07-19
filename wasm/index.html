@@ -27,7 +27,7 @@
         {
           let response = await fetch('sample.wasm');
           let bytes = await response.arrayBuffer();
-          let { instance } = await WebAssembly.instantiate(bytes, { });
+          let { instance } = await WebAssembly.instantiate(bytes);
           
           // call functions
           let add = instance.exports.add(13, 12);
