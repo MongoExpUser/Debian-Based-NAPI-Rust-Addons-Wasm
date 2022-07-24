@@ -10,7 +10,7 @@ pub mod credentials
   use std::io::{self, stdin, Write};
   use rand::distributions::Alphanumeric;
   
-  pub fn postgres_db_credentials(username: String, password_length: usize)
+  pub fn database_credentials(username: String, password_length: usize)
   {
       let rand_string: String = thread_rng().sample_iter(&Alphanumeric).take(password_length).map(char::from).collect();
       let mut credentials_map = HashMap::new();
