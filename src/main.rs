@@ -11,7 +11,6 @@ fn main()
     credentials::database_credentials(postgres_username, postgres_password_length);
     
     // run commands via processes
-     //
     let cwd_one: String = "/home/ubuntu".to_string();
     let cwd_two: String = "/home/ubuntu".to_string();
     let cmd_one = "ls".to_string();
