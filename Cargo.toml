@@ -12,7 +12,10 @@ categories = ["napi-rust"]
 
 [lib]
 crate-type = ["cdylib"] # ddl/so
-path = "src/lib.rs"     # The source file of the target
+#path = "src/lib.rs"    # The source file of the target
+time = "0.3.11"
+regex = "1.6.0"
+rand = "0.8.5"
 
 [dependencies]
 napi = "2"
