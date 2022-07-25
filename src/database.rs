@@ -30,4 +30,21 @@ pub mod credentials
       println!("==================================");
 
   }
+  
+  pub fn process_builder_command(cwd_one: String, cwd_two: String, cmd_one: String, cmd_two: String, args_one: &mut [String], args_two: &mut [String])
+  {
+    // command one
+    let mut list_dir = Command::new(cmd_one);
+    list_dir.args(args_one);
+    list_dir.current_dir(cwd_one);
+    list_dir.status().expect("process failed to execute");
+    println!();
+    
+    //command two
+    let mut list_dir_and_size = Command::new(cmd_two);
+    list_dir_and_size.args(args_two);
+    list_dir_and_size.current_dir(cwd_two);
+    list_dir_and_size.status().expect("process failed to execute");
+    println!();
+  }
 }
