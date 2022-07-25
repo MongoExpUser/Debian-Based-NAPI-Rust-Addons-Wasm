@@ -43,8 +43,8 @@ pub mod utils
       let credentials = (username, password);
       
       println!("==================================");
-      println!("Password:  {}", credentials.0);
-      println!("Username:  {}", credentials.1);
+      println!("Username:  {}", credentials.0);
+      println!("Password:  {}", credentials.1);
       println!("==================================");
       return credentials;
   }
