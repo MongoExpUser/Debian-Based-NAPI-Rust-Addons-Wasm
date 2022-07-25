@@ -1,6 +1,6 @@
 
 
-// a modules for generation database credentails
+// a modules for generation database credentials and running commands via processes
 
 pub mod credentials
 {
