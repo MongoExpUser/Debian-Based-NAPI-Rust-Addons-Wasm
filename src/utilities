@@ -1,8 +1,13 @@
 
 
-// a modules for generation database credentials and running commands via processes
-
-pub mod credentials
+/* 
+   A module for:
+   (1) Generation database credentials
+   (2) Running commands via processes
+   (3) Etc.
+*/
+ 
+pub mod utils
 {
 
   use rand::{thread_rng, Rng};
