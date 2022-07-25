@@ -27,6 +27,8 @@ See NAPI C/C++ example: https://github.com/MongoExpUser/Shale-Reservoir-DNN-and-
     (5)  ./src/build.rs <br>
     (6)  ./src/lib.rs <br>
     (7)  ./src/main.rs <br>
+    (8)  ./src/utilities.rs <br>
+    
 
     <strong> Modify </strong> the  above files as needed, or can keep the original contents to test.
     
