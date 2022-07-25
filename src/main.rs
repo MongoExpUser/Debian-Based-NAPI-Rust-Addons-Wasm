@@ -6,9 +6,14 @@ pub use crate::utilities::utils;
 fn main()
 {
     // create postgres database credential
-    let postgres_username: String  = "postgres".to_string();
+    let postgres_username: String  = "postgres_user".to_string();
     let postgres_password_length: usize  = 10;
     utils::database_credentials(postgres_username, postgres_password_length);
+    
+    // create redis database credential
+    let redis_username: String  = "redis_user".to_string();
+    let redis_password_length: usize  = 20;
+    utils::database_credentials_as_turple(redis_username, redis_password_length);
     
     // run commands via processes
     let cwd_one: String = "/home/ubuntu".to_string();
