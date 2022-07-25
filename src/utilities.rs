@@ -35,6 +35,19 @@ pub mod utils
       println!("==================================");
 
   }
+   
+  pub fn database_credentials_as_turple(username: String, password_length: usize) -> (String, String)
+  {
+      let rand_string: String = thread_rng().sample_iter(&Alphanumeric).take(password_length).map(char::from).collect();
+      let password = String::from(rand_string);
+      let credentials = (username, password);
+      
+      println!("==================================");
+      println!("Password:  {}", credentials.0);
+      println!("Username:  {}", credentials.1);
+      println!("==================================");
+      return credentials;
+  }
   
   pub fn process_builder_command(cwd_one: String, cwd_two: String, cmd_one: String, cmd_two: String, args_one: &mut [String], args_two: &mut [String])
   {
