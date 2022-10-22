@@ -2,7 +2,7 @@
 
 /* 
    A module for:
-   (1) Generation database credentials
+   (1) Generating database credentials
    (2) Running commands via processes
    (3) Etc.
 */
