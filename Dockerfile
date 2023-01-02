@@ -19,7 +19,7 @@
 # *                                                                                                                                     *
 # *   2)  Additional debian Packages                                                                                                    *
 # *                                                                                                                                     *
-# *   3)  Python v3.9                                                                                                                   *
+# *   3)  Python v3.x                                                                                                                   *
 # *                                                                                                                                     *
 # *   4)  Python3-pip                                                                                                                   *
 # *                                                                                                                                     *
@@ -66,8 +66,8 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
     && apt-get install -y sshpass cmdtest spamassassin snap nmap net-tools \
     && apt-get install -y aptitude build-essential gcc snapd screen spamc parted  \
     && apt-get install -y iputils-ping certbot python3-certbot-apache \
-    #  3. python3 v.9
-    && apt-get -y install python3.9  \
+    #  3. python3.x
+    && apt-get -y install python3  \
     #  4. python3-pip
     && apt-get -y install python3-pip \
     #  5. boto3
@@ -75,7 +75,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
     #  6. upgrade python's awscli package
     && python3 -m pip install --upgrade awscli \
     #  7. node.js v18x
-    && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && curl -fsSL https://deb.nodesource.com/setup_19.x | bash - \
     && echo -e "Y" \
     && apt-get install -y nodejs \
     && echo -e "Y" \
