@@ -74,7 +74,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
     && python3 -m pip install boto3 \
     #  6. upgrade python's awscli package
     && python3 -m pip install --upgrade awscli \
-    #  7. node.js v18x
+    #  7. node.js v19.x
     && curl -fsSL https://deb.nodesource.com/setup_19.x | bash - \
     && echo -e "Y" \
     && apt-get install -y nodejs \
