@@ -11,8 +11,11 @@ keywords = ["napi", "rust", "node.js"]
 categories = ["napi-rust"]
 
 [lib]
-crate-type = ["cdylib"] # ddl/so
-#path = "src/lib.rs"    # The source file of the target
+crate-type = ["rlib"]        # rlib (rust Library): The default format for Rust-to-Rust dependency.
+# crate-type = ["dylib"]     # dylib (dynamic Library): A dynamically linked library with an unstable ABI, suitable for linking Rust code with other Rust code at runtime.
+# crate-type = ["cdylib"]    # cdylib (c dynamic library): A shared library (.so, .dylib, .dll) designed to be loaded by non-Rust languages (like C or Python), requiring #[no_mangle] and extern "C" on public functions.
+# crate-type = ["staticlib"] # staticlib (static library): A static system library (.a, .lib) containing all Rust code and dependencies, useful for embedding in C/C++ applications
+# path = "src/lib.rs"        # The source file of the target
 time = "0.3.11"
 regex = "1.6.0"
 rand = "0.8.5"
