@@ -9,6 +9,7 @@ rust-version = "1.62.0"
 license = "MIT"
 keywords = ["napi", "rust", "node.js"]
 categories = ["napi-rust"]
+build = "build.rs"  # or build = "src/build.rs"
 
 [lib]
 crate-type = ["cdylib"]
